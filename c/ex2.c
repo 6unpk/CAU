@@ -2,7 +2,7 @@
 
 // 펙토리얼 만들기
 
-int main() {
+int ex2() {
 	
 	int i = 0, j = 1, num = 0;
 
