@@ -6,7 +6,7 @@ odd : 1부터 100까지 홀수의 합
 div : 소수 둘째짜리까지 나타내기
 */
 
-int question1() {
+int ex1() {
 
 	int num1, num2, div;
 	int sum = 0, odd =a 0;
