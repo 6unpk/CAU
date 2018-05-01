@@ -1,18 +1,57 @@
 #include <stdio.h>
 
-// 펙토리얼 만들기
+/*
+    *
+   * *
+  *   *
+ *     *
+  *   *
+   * *
+    *
+*/
 
 int ex2() {
-	
-	int i = 0, j = 1, num = 0;
 
-	printf("수를 입력하세요 : ");
-	scanf("%d", &num);
+	int a, b;
+	int start = 3;
+	int end = 3;
 
-	for (i = 0; i < num; i++) {
-		j *= i;
+	for (b = 0; b < 3; b++) {
+
+		for (a = 0; a < 7; a++) {
+
+			if (a == start) {
+				printf("*");
+			}
+			else if (a == end) {
+				printf("*");
+			}
+			else {
+				printf(" ");
+			}
+		}
+		start++;
+		end++;
+		printf("\n");
 	}
-	printf("n!의 값 = %d\n", j);
+	start = 0;
+	end = 6;
 
+	for (b = 0; b < 4; b++) {
+		for (a = 0; a < 7; a++) {
+			if (a == start) {
+				printf("*");
+			}
+			else if (a == end) {
+				printf("*");
+			}
+			else {
+				printf(" ");
+			}
+		}
+		start++;
+		end++;
+		printf("\n");
+	}
 	return 0;
 }
