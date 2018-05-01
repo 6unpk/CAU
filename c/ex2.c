@@ -1,34 +1,18 @@
 #include <stdio.h>
 
-/*
-삼각형 별 만들기
-ex) i=3
-   *
-  ***
- *****
-*/
-int ex2()
-{
-	int i = 0, j = 0, s = 0, star = 0;
+// 펙토리얼 만들기
 
-	do
-	{
-		printf("Input the number n : ");
-		scanf("%d", &i);
+int main() {
+	
+	int i = 0, j = 1, num = 0;
 
-		for (j = 0; j<i; j++)
-		{
-			for (s = 0; s<i - 1 - j; s++)
-			{
-				printf("*");
-			}
-			for (star = 0; star<j * 2 + 1; star++)
-			{
-				printf("*");
-			}
-			printf("\n");
-		}
-	} while (i != 0);
+	printf("수를 입력하세요 : ");
+	scanf("%d", &num);
+
+	for (i = 0; i < num; i++) {
+		j *= i;
+	}
+	printf("n!의 값 = %d\n", j);
 
 	return 0;
 }
